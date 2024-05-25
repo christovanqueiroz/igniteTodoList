@@ -18,7 +18,7 @@
 .taskCreator {
     margin-top: -1.125rem;
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     gap: 0.5rem;
     justify-items: center;
 }
@@ -109,4 +109,44 @@
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .taskCreator {
+        margin-bottom: 1rem;
+    }
+
+    .tasksProgress {
+        padding-bottom: 0.75rem;
+    }
+
+    .taskCreator textarea {
+        width: 400px;
+    }
+
+    .main {
+        width: 480px;
+    }
+
+    .tasks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .taskCreator textarea {
+        width: 240px;
+    }
+
+    .main {
+        width: 320px;
+    }
+
+    .emptyTasks {
+        font-size: small;
+    }
 }
